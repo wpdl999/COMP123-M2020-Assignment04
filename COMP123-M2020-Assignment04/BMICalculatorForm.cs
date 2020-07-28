@@ -17,35 +17,16 @@ namespace COMP123_M2020_Assignment04
             InitializeComponent();
         }
 
-        private void CalculatorButton_Click(object sender, EventArgs e)
+        private void MetricButton_Click(object sender, EventArgs e)
         {
-            int weight;
-            int height;
-            int bmi;
-            weight = int.Parse(weightTextBox.Text);
-            height = int.Parse(heightTextBox.Text);
-
-            bmi = (height * height) / weight;
-
-            if (bmi < 18.5)
-            {
-                resultLabel.Text = bmi + "\n UnderWeight";
+            if (MetricButton.Checked) {
+                Program.metric_Units.Show();
             }
+        }
 
-            else if (bmi > 18.5 && bmi < 24.9)
-            {
-                resultLabel.Text = bmi + "\n Normal";
-            }
-
-            else if (bmi > 25 && bmi < 29.9)
-            {
-                resultLabel.Text = bmi + "\n OverWeight";
-            }
-
-            else if (bmi > 30)
-            {
-                resultLabel.Text = bmi + "\n Obese";
-            }
+        private void ImperialButton_Click(object sender, EventArgs e)
+        {
+            if()
         }
     }
 }

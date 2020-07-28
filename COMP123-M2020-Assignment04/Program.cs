@@ -8,6 +8,10 @@ namespace COMP123_M2020_Assignment04
 {
     static class Program
     {
+        public static Metric_Units metric_Units;
+        public static BMICalculatorForm bmiCalculatorForm;
+
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
