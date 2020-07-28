@@ -70,13 +70,11 @@
             // 
             // MetricButton
             // 
-            this.MetricButton.AutoCheck = false;
             this.MetricButton.AutoSize = true;
             this.MetricButton.Location = new System.Drawing.Point(3, 3);
             this.MetricButton.Name = "MetricButton";
             this.MetricButton.Size = new System.Drawing.Size(176, 35);
             this.MetricButton.TabIndex = 0;
-            this.MetricButton.TabStop = true;
             this.MetricButton.Text = "Metric Units";
             this.MetricButton.UseVisualStyleBackColor = true;
             this.MetricButton.Click += new System.EventHandler(this.MetricButton_Click);
@@ -88,7 +86,6 @@
             this.ImperialButton.Name = "ImperialButton";
             this.ImperialButton.Size = new System.Drawing.Size(119, 35);
             this.ImperialButton.TabIndex = 1;
-            this.ImperialButton.TabStop = true;
             this.ImperialButton.Text = "Impeial";
             this.ImperialButton.UseVisualStyleBackColor = true;
             this.ImperialButton.Click += new System.EventHandler(this.ImperialButton_Click);
@@ -108,6 +105,7 @@
             this.Name = "BMICalculatorForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.BMICalculatorForm_FormClosing);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

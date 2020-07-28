@@ -19,13 +19,13 @@ namespace COMP123_M2020_Assignment04
 
         private void mertricButton_Click(object sender, EventArgs e)
         {
-            int weight;
-            int height;
-            int bmi;
-            weight = int.Parse(weightMTextBox.Text);
-            height = int.Parse(heightMTextBox.Text);
+            double weight;
+            double height;
+            double bmi;
+            weight = double.Parse(weightMTextBox.Text);
+            height = double.Parse(heightMTextBox.Text);
 
-            bmi = (height * height) / weight;
+            bmi = weight / (height * height) ;
 
             if (bmi < 18.5)
             {
@@ -51,6 +51,11 @@ namespace COMP123_M2020_Assignment04
         private void BackMButton_Click(object sender, EventArgs e)
         {
             Program.bmiCalculatorForm.Show();
+        }
+
+        private void Metric_Units_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

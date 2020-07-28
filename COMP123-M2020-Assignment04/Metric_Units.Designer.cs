@@ -42,7 +42,7 @@
             // 
             this.weightMLabel.AutoSize = true;
             this.weightMLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.weightMLabel.Location = new System.Drawing.Point(16, 112);
+            this.weightMLabel.Location = new System.Drawing.Point(16, 163);
             this.weightMLabel.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.weightMLabel.Name = "weightMLabel";
             this.weightMLabel.Size = new System.Drawing.Size(141, 31);
@@ -60,7 +60,7 @@
             // 
             // weightMTextBox
             // 
-            this.weightMTextBox.Location = new System.Drawing.Point(220, 112);
+            this.weightMTextBox.Location = new System.Drawing.Point(211, 163);
             this.weightMTextBox.Name = "weightMTextBox";
             this.weightMTextBox.Size = new System.Drawing.Size(72, 38);
             this.weightMTextBox.TabIndex = 2;
@@ -69,7 +69,7 @@
             // 
             this.heightMLabel.AutoSize = true;
             this.heightMLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.heightMLabel.Location = new System.Drawing.Point(21, 172);
+            this.heightMLabel.Location = new System.Drawing.Point(16, 112);
             this.heightMLabel.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.heightMLabel.Name = "heightMLabel";
             this.heightMLabel.Size = new System.Drawing.Size(136, 31);
@@ -78,7 +78,7 @@
             // 
             // heightMTextBox
             // 
-            this.heightMTextBox.Location = new System.Drawing.Point(220, 172);
+            this.heightMTextBox.Location = new System.Drawing.Point(211, 112);
             this.heightMTextBox.Name = "heightMTextBox";
             this.heightMTextBox.Size = new System.Drawing.Size(72, 38);
             this.heightMTextBox.TabIndex = 2;
@@ -132,6 +132,7 @@
             this.Name = "Metric_Units";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Metric_Units";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Metric_Units_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

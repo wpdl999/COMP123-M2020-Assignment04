@@ -19,14 +19,25 @@ namespace COMP123_M2020_Assignment04
 
         private void MetricButton_Click(object sender, EventArgs e)
         {
-            if (MetricButton.Checked) {
+            if (MetricButton.Checked) 
+            {
                 Program.metric_Units.Show();
+                this.Hide();
             }
         }
 
         private void ImperialButton_Click(object sender, EventArgs e)
         {
-            if()
+            if (ImperialButton.Checked) 
+            {
+                Program.imperial.Show();
+                this.Hide();
+            }
+        }
+
+        private void BMICalculatorForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
