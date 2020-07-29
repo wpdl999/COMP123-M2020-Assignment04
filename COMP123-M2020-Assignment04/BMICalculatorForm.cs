@@ -28,6 +28,7 @@ namespace COMP123_M2020_Assignment04
             {
                 weight = double.Parse(weightTextBox.Text);
                 height = double.Parse(heightTextBox.Text);
+                height = height / 100;
 
                 bmi = weight / (height * height);
 
@@ -63,6 +64,8 @@ namespace COMP123_M2020_Assignment04
             {
                 weight = double.Parse(weightTextBox.Text);
                 height = double.Parse(heightTextBox.Text);
+                height = height * 0.393701;
+                weight = weight * 2.20462;
 
                 bmi = (weight * 703) / (height * height);
 
