@@ -8,9 +8,8 @@ namespace COMP123_M2020_Assignment04
 {
     static class Program
     {
-        public static Metric_Units metric_Units;
+        public static SplashForm splashForm;
         public static BMICalculatorForm bmiCalculatorForm;
-        public static Imperial imperial;
 
         /// <summary>
         /// The main entry point for the application.
@@ -21,11 +20,10 @@ namespace COMP123_M2020_Assignment04
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            metric_Units = new Metric_Units();
+            splashForm = new SplashForm();
             bmiCalculatorForm = new BMICalculatorForm();
-            imperial = new Imperial();
 
-            Application.Run(new BMICalculatorForm());
+            Application.Run(splashForm);
         }
     }
 }
